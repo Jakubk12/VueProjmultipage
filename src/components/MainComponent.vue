@@ -115,44 +115,6 @@
 }
 
 /* Other Non-Flexbox Related Styles */
-.c-header,
-.c-footer {
-  background: #EDD382;
-  text-align: center;
-  padding: 2em;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.4em;
-  font-weight: 300;
-  line-height: 1.6em;
-  
-  h1, h2, p {
-    max-width: 40em;
-    margin: 0 auto;
-    
-    &:not(:last-child) {
-      margin-bottom: 1em;
-    }
-  }
-  
-  h1 {
-    text-transform: uppercase;
-    font-weight: 900;
-  }
-  
-  a {
-    color: #000;
-  }
-}
-
-.c-footer {
-  p {
-    font-weight: 300;
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Georgia', Times, serif;
@@ -176,6 +138,41 @@ h2 {
 a {
   color: #0F5257;
 }
-
+.c-btn {
+  color: #000;
+  display: inline-block;
+  border-bottom: 4px solid #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  letter-spacing: .1em;
+  padding: .3em 0;
+  position: relative;
+  transition: .2s all;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #FF521B;
+    height: 0%;
+    transition: .2s all;
+    left: 0;
+    z-index: -10;
+  }
+  
+  &:hover {
+    padding-left: .75em;
+    padding-right: .75em;
+    color: #fff;
+    border-color: #FF521B;
+    
+    &:before {
+      height: 100%;
+    }
+  }
+}
 
 </style>
