@@ -14,12 +14,7 @@ export default {
     MainComponent : MainComponent,
     TheFooter : TheFooter},
 
-  data()
-  {
-    return {
-
-    }
-  }
+ 
 }
 </script>
 
