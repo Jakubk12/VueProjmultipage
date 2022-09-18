@@ -1,10 +1,11 @@
 <template>
 <div>
+   <!-- <post-list></post-list>  -->
 <section class="c-posts">
   <article class="c-posts__item">
-    <h2>Article Title Here</h2>
+    <h2>A capabilities by using preprocessors</h2>
     <p></p>
-    <p><a href="#" class="c-btn">Read More</a></p>
+    <p><a v-wave="{color: '#d64161'}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
     <h2>Article Title Here</h2>
@@ -176,3 +177,12 @@ a {
 }
 
 </style>
+<script>
+//import PostList from './PostList.vue'
+export default {
+//    name: 'MainComponent',
+//    component: {
+//        PostList : PostList
+    }
+//}
+</script>
