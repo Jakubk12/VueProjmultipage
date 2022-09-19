@@ -1,8 +1,13 @@
-<template>
+<template><div>
     <header class="c-header">
   <h1>Responsive Flexbox Article Listing</h1>
   <p>Flexbox is an amazingly powerful layout tool. In this example I have created a responsive grid of articles that increased the amount of visible articles on the page at larger resolutions.</p>
+  
+       
 </header>
+
+</div>
+
 </template>
 
 <style lang="scss" scoped>
@@ -23,17 +28,16 @@
     &:not(:last-child) {
       margin-bottom: 1em;
     }
-  }
+  } 
   
   h1 {
     text-transform: uppercase;
     font-weight: 900;
   }
   
-  a {
-    color: #000;
-  }
+
 }
+
 
 
 </style>

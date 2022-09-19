@@ -5,57 +5,58 @@
   <article class="c-posts__item">
     <h2>A capabilities by using preprocessors</h2>
     <p></p>
-    <p><a v-wave="{color: '#d64161'}" href="#" class="c-btn">Read More</a></p>
+    <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
+  </article>
+  <article class="c-posts__item">
+    <h2>Differences between using bootstrap and Tailwind</h2>
+    <p></p>
+    <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
+  </article>
+  <article class="c-posts__item">
+    <h2>Let's now about modern Javascript ES6</h2>
+    <p>.</p>
+    <p><a v-wave="{color: '#d64161' , duration: 2}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
     <h2>Article Title Here</h2>
     <p></p>
-    <p><a href="#" class="c-btn">Read More</a></p>
+    <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
+  </article>
+  <article class="c-posts__item">
+    <h2>Article Title Here</h2>
+    <p></p>
+    <p><a v-wave="{color: '#d64161', duration: 2,}" href="#" class="c-btn">Read More</a></p>
+  </article>
+  <article class="c-posts__item">
+    <h2>Article Title Here</h2>
+    <p></p>
+    <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
+  </article>
+  <article class="c-posts__item">
+    <h2>Article Title Here</h2>
+    <p></p>
+    <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
     <h2>Article Title Here</h2>
     <p>.</p>
-    <p><a href="#" class="c-btn">Read More</a></p>
+    <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
     <h2>Article Title Here</h2>
     <p></p>
-    <p><a href="#" class="c-btn">Read More</a></p>
-  </article>
-  <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p></p>
-    <p><a href="#" class="c-btn">Read More</a></p>
-  </article>
-  <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p></p>
-    <p><a href="#" class="c-btn">Read More</a></p>
-  </article>
-  <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p></p>
-    <p><a href="#" class="c-btn">Read More</a></p>
+    <p><a v-wave="{color: '#d64161', duration: 2, easing: 'ease-in'}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
     <h2>Article Title Here</h2>
     <p>.</p>
-    <p><a href="#" class="c-btn">Read More</a></p>
+    <p><a v-wave="{color: '#d64161', duration: 2, easing: 'ease-in'}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
     <h2>Article Title Here</h2>
     <p></p>
-    <p><a href="#" class="c-btn">Read More</a></p>
-  </article>
-  <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p>.</p>
-    <p><a href="#" class="c-btn">Read More</a></p>
-  </article>
-  <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p></p>
-    <p><a href="#" class="c-btn">Read More</a></p>
+    <p><a v-wave="{color: '#d64161', duration: 2, easing: 'ease-in', dissolveDuration: 1
+}" href="#" class="c-btn">Read More</a></p>
   </article>
 </section>
 </div>
@@ -181,8 +182,8 @@ a {
 //import PostList from './PostList.vue'
 export default {
 //    name: 'MainComponent',
-//    component: {
+    component: {
 //        PostList : PostList
     }
-//}
+}
 </script>
