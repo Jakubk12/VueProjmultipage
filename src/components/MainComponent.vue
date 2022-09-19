@@ -13,47 +13,47 @@
     <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
-    <h2>Let's now about modern Javascript ES6</h2>
+    <h2>Let's know about modern Javascript ES6</h2>
     <p>.</p>
     <p><a v-wave="{color: '#d64161' , duration: 2}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
-    <h2>Article Title Here</h2>
+    <h2>Profits after relase of HTML5 </h2>
     <p></p>
     <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p></p>
+    <h2>Using VueJS...</h2>
+    <p>...and how it improve making a modern web applications and webpages</p>
     <p><a v-wave="{color: '#d64161', duration: 2,}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
-    <h2>Article Title Here</h2>
+    <h2>Responsive Web design in CSS</h2>
+    <p>How it works, for adjust website to your screen's size and device</p>
+    <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
+  </article>
+  <article class="c-posts__item">
+    <h2>Sending HTTP requests</h2>
     <p></p>
     <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p></p>
+    <h2>Javascript and Typescript. </h2>
+    <p>When to use?</p>
     <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p>.</p>
-    <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
-  </article>
-  <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p></p>
+    <h2>SEO,</h2>
+    <p>Meaning of technical SEO in modern web development</p>
     <p><a v-wave="{color: '#d64161', duration: 2, easing: 'ease-in'}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
-    <h2>Article Title Here</h2>
-    <p>.</p>
+    <h2>Differences between Vue, React and Angular</h2>
+    <p>Compare 3 most popular modern frameworks</p>
     <p><a v-wave="{color: '#d64161', duration: 2, easing: 'ease-in'}" href="#" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
-    <h2>Article Title Here</h2>
+    <h2>More content about frontend</h2>
     <p></p>
     <p><a v-wave="{color: '#d64161', duration: 2, easing: 'ease-in', dissolveDuration: 1
 }" href="#" class="c-btn">Read More</a></p>

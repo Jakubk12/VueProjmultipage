@@ -1,7 +1,7 @@
 <template><div>
     <header class="c-header">
-  <h1>Responsive Flexbox Article Listing</h1>
-  <p>Flexbox is an amazingly powerful layout tool. In this example I have created a responsive grid of articles that increased the amount of visible articles on the page at larger resolutions.</p>
+  <h1>Modern frontend tools for each developer</h1>
+  <p>What is must have to know in frontend development</p>
   
        
 </header>
@@ -13,6 +13,8 @@
 <style lang="scss" scoped>
 .c-header
  {
+  float: center;
+  margin-right: 0;
   background: #EDD382;
   text-align: center;
   padding: 2em;
