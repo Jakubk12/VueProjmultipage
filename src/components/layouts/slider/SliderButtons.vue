@@ -23,3 +23,10 @@ left: 0;
     right: 0;
 }
 </style>
+
+<script>
+export default {
+    emits: ['prev', 'next']
+}
+</script>
+

@@ -7,7 +7,7 @@
             :current-slide="currentSlide"
             :index="index">
             </slide-item>
-            <slider-buttons></slider-buttons>
+            <slider-buttons @prev="prev" @next="next"></slider-buttons> 
             </div>
             </div>
 </template>
@@ -25,14 +25,23 @@ export default {
             setCurrentSlide(index) {
                 this.currentSlide = index;
 
+            },
+            prev() {
+                const index = 
+             this.currentSlide > 0 ? this.currentSlide -1 : this.slides.length -1; 
+            this.setCurrentSlide(index);
+            },
+            next() {
+                const index =
+             this.currentSlide <  this.slides.length -1 ?  this.currentSlide +1 : 0
+            this.setCurrentSlide(index);
             }
         },
         mounted() {
-            this.slideInterval = setInterval(() => {
-            const index = this.currentSlide < this.slides.length ? this.currentSlide + 1 : 0; 
-            this.currentSlide = index;
-            },
-            3000)
+           // this.slideInterval = setInterval(() => {
+           //     this.next
+           // },
+           // 3000)
         },
         beforeUnmount() {
             clearInterval(this.slideInterval)
