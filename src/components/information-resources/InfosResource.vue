@@ -19,8 +19,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c-posts {
+
+div {
   display: flex;
+}
+.c-posts {
   flex-wrap: wrap;
   align-items: top;
   padding: 5%;
@@ -53,9 +56,6 @@ h2 {
   margin-top: 0;
 }
 
-router-link {
-  color: #0F5257;
-}
 .c-btn {
   color: #000;
   display: inline-block;
