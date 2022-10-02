@@ -3,9 +3,13 @@
    <!-- <post-list></post-list>  -->
 <section class="c-posts">
   <article class="c-posts__item">
+    <infos-resource v-for="element in storedElements" 
+    :key="element.id" 
+    :title="element.title" 
+    :description="element.description"></infos-resource>
     <h2>A capabilities by using preprocessors</h2>
     <p></p>
-    <p><a v-wave="{color: '#d64161', duration: 2}" href="#" class="c-btn">Read More</a></p>
+    <p> <a v-wave="{color: '#d64161', duration: 2}" class="c-btn">Read More</a></p>
   </article>
   <article class="c-posts__item">
     <h2>Differences between using bootstrap and Tailwind</h2>
@@ -101,7 +105,7 @@ h2 {
   margin-top: 0;
 }
 
-a {
+router-link {
   color: #0F5257;
 }
 .c-btn {
@@ -179,11 +183,78 @@ a {
 
 </style>
 <script>
+import InfosResource from './information-resources/InfosResource.vue';
 //import PostList from './PostList.vue'
 export default {
 //    name: 'MainComponent',
-    component: {
+    components: {
+          InfosResource : InfosResource,
+    },
 //        PostList : PostList
-    }
+data() {
+  return {
+    storedElements: [
+      {
+        id: 'preprocessor-sass',
+        title: 'Sass Preprocessor',
+        description: 'Sass posibilities',
+        link: 'https://techaffinity.com/blog/what-is-sass-css-preprocessor/'
+      },
+      {
+        id: 'tailwind-bootstrap',
+        title: 'Tailwind and bootstrap',
+        description: 'Tailwind and bootstrap differences',
+        link: 'https://www.geeksforgeeks.org/tailwind-css-vs-bootstrap/'
+      },
+      {
+        id: 'Let"s know about modern Javascript ES6',
+        title: 'What is must knowledge about Javascript ES6',
+        description: 'What is must know in JS ES6'
+      },
+      {
+        id:'',
+        title:'',
+        description: '',
+      },
+       {
+        id:'',
+        title:'',
+        description: '',
+      },
+       {
+        id:'',
+        title:'',
+        description: '',
+      },
+       {
+        id:'',
+        title:'',
+        description: '',
+      },
+       {
+        id:'',
+        title:'',
+        description: '',
+      },
+       {
+        id:'',
+        title:'',
+        description: '',
+      },
+       {
+        id:'',
+        title:'',
+        description: '',
+      },
+       {
+        id:'',
+        title:'',
+        description: '',
+      },
+      
+    ]
+  }
+}
+
 }
 </script>

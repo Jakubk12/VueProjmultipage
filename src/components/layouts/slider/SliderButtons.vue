@@ -4,6 +4,12 @@
     <button class="slider-control right" @click="$emit('next')">Next</button>
     </div>
 </template>
+<script>
+export default {
+    emits: ['prev', 'next']
+}
+</script>
+
 <style lang="scss" scoped>
 .slider-control {
     background-color: rgba( 9, 8, 3, 1);
@@ -24,9 +30,4 @@ left: 0;
 }
 </style>
 
-<script>
-export default {
-    emits: ['prev', 'next']
-}
-</script>
 

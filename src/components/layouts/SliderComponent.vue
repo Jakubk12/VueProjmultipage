@@ -13,8 +13,8 @@ export default {
       components: { SlideLast },
     data : () => ({
         slides: [ "https://picsum.photos/id/237/550/200",
-        //"https://picsum.photos/id/238/550/200",
-        //"https://picsum.photos/id/239/550/200",
+        "https://picsum.photos/id/238/550/200",
+        "https://picsum.photos/id/239/550/200",
         ]
     })
 }

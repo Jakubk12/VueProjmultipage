@@ -16,11 +16,12 @@
 import SlideItem from './SlideItem.vue';
 import SliderButtons from './SliderButtons.vue';
 export default {
-    props: ['slides', ],
+    props: ["slides", ],
     components: { SlideItem : SlideItem,
     SliderButtons : SliderButtons},
     data : () => ({
         currentSlide: 0,
+        slideInterval: null,
         methods: {
             setCurrentSlide(index) {
                 this.currentSlide = index;
@@ -44,7 +45,7 @@ export default {
            // 3000)
         },
         beforeUnmount() {
-            clearInterval(this.slideInterval)
+           // clearInterval(this.slideInterval)
         },
     })
 }
