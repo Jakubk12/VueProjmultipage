@@ -1,16 +1,15 @@
 <template>
-    <ul>
-        <div><section class="c-posts">
+<body>
+      <section class="c-posts">
   <article class="c-posts__item">
     <h2>{{title}}</h2>
     <p>{{description}}</p>
-    <p> <a :href="link" v-wave="{color: '#d64161', duration: 2}" class="c-btn">Read More</a></p>
+    <p> <a :href="link" v-wave="{color: '#d64161', duration: 2}" class="c-btn">{{link}}Read More</a></p>
             <header>
                 </header>
                 </article>
                 </section>
-            </div>
-    </ul>
+                </body>
 </template>
 <script>
 export default {
@@ -20,13 +19,12 @@ export default {
 
 <style lang="scss" scoped>
 
-div {
-  display: flex;
-}
 .c-posts {
+  display: flex;
   flex-wrap: wrap;
   align-items: top;
   padding: 5%;
+  justify-content: space-between;
 
   &__item {
     flex-grow: 1;
@@ -44,12 +42,12 @@ body {
   margin: 0;
 }
 
-h1 {
+h2 {
   font-size: calc(130% + 1vw);
   font-weight: normal;
 }
 
-h2 {
+p {
   font-size: 1.5em;
   font-weight: normal;
   margin-bottom: 0;
@@ -86,6 +84,7 @@ h2 {
     padding-right: .75em;
     color: #fff;
     border-color: #FF521B;
+    cursor: pointer;
     
     &:before {
       height: 100%;
@@ -121,6 +120,7 @@ h2 {
   .c-posts {
     &__item {
       flex-basis: 25%;
+      display: inline-block;
       
       &:first-child {
         flex-basis: 50%;

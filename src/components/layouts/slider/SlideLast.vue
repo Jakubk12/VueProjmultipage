@@ -16,7 +16,7 @@
 import SlideItem from './SlideItem.vue';
 import SliderButtons from './SliderButtons.vue';
 export default {
-    props: ["slides", ],
+    props: ['slides', ],
     components: { SlideItem : SlideItem,
     SliderButtons : SliderButtons},
     data : () => ({
