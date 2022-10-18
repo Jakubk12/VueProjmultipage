@@ -1,5 +1,5 @@
 <template>
-   <div><h1>We can provide news for you about frontend technologies. You just provide your e-mail adress and fill the questionaire </h1>
+   <div><h1>We can send news for you about frontend technologies. You just provide your e-mail adress and fill the questionaire </h1>
     </div> 
     <form @submit.prevent="submitForm">
     <div class="form-control" :class="{invalid: userNameValidity === ''}">
