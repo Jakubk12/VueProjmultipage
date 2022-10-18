@@ -22,3 +22,11 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+.slide {
+    margin-bottom: 200px;
+}
+@media screen {
+    
+}
+</style>

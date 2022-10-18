@@ -23,8 +23,8 @@
         font-family: 'Courier New', Courier, monospace;
 .basic {
     
-    display: inline-block;
-    background: #6b5b95;
+  display: inline-block;
+  background: #6b5b95;
   margin-left: 265px;
   margin-top: 25px;
   margin-bottom: 25px;

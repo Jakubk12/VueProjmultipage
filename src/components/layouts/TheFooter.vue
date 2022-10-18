@@ -6,6 +6,10 @@
 
 <style lang="scss" scoped>
 .c-footer {
+  margin-right: 0;
+  height: 100px;
+  padding-bottom: 75%;
+  margin-bottom: 0;
   background: #EDD382;
   text-align: center;
   padding: 2em;
@@ -13,6 +17,7 @@
   font-size: 1.4em;
   font-weight: 300;
   line-height: 1.6em;
+  
   
   h1, h2, p {
     max-width: 40em;
@@ -32,4 +37,5 @@
     color: #000;
   }
 }
+
 </style>

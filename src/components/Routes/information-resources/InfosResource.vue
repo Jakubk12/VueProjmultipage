@@ -18,11 +18,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .c-posts {
+  width: 100%;
+  float: center;
   display: flex;
-  flex-wrap: wrap;
-  align-items: top;
+  margin: auto;
+ flex-wrap: wrap;
+ align-items: top;
   padding: 5%;
   justify-content: space-between;
 
