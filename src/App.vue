@@ -1,10 +1,10 @@
 <template>
-<div>
-  </div>
+<div id="app">
   <the-header></the-header>
   <list-component></list-component>
   <slider-component></slider-component>
 <the-footer></the-footer>
+</div>
 </template>
 <script>
     import TheHeader from './components/layouts/TheHeader.vue';
@@ -21,3 +21,12 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+#app {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+</style>
