@@ -1,22 +1,22 @@
 <template>
    <div><h1>We can send news for you about frontend technologies. You just provide your e-mail adress and fill the questionaire </h1>
     </div> 
-    <form @submit.prevent="submitForm">
+    <form class="main" @submit.prevent="submitForm">
     <div class="form-control" :class="{invalid: userNameValidity === ''}">
-        <label for="user-name">Your Name</label>
-        <input id="user-name" name="user-name" type="text" v-model="UserName" @blur="validationInput" />
+        <label for="user-name">Your Name: </label>
+        <input class="input" id="user-name" name="user-name" type="text" v-model="UserName" @blur="validationInput" />
         <p v-if="userNameValidity === 'invalid'"> Please enter a valid Name!</p>
         </div>
         <div class="form-control">
         <label for="user-age">Your Age ( Years old ) </label>
-        <input id="user-age" name="user-age" type="number" ref="ageInput" v-model="UserAge" />
+        <input class="input" id="user-age" name="user-age" type="number" ref="ageInput" v-model="UserAge" />
         </div>
         <div class="form-control">
             <label for="referrer"> What is the most interest topic for you?</label>
-            <select id="referrer" name="referrer" v-model="referrer">
-                <option value="ModernFrameworks"></option>
-                <option value="CSSpreprocessors"></option>
-                <option value="PerformanceRules"></option>
+            <select class="input" id="referrer" name="referrer" v-model="referrer">
+                <option class="input" value="ModernFrameworks">Modern Frameworks</option>
+                <option class="input" value="CSSpreprocessors">CSSpreprocessors</option>
+                <option class="input" value="PerformanceRules">Performance rules</option>
             </select>
             <div class="form-control">
                 <h1>How long are you interested in coding?</h1>
@@ -74,17 +74,19 @@
             <label for="confirm-terms">Agree to terms for use?</label>
             </div>
             </div>
-        
-            
-        
+            <div class="strip">
+                  <basic-button @click="ConfirmInput"></basic-button>            
+        </div>
         </form>
 </template>
 
 <script>
-import RatingComponent from './layouts/RatingComponent.vue'
+import RatingComponent from './layouts/RatingComponent.vue';
+import BasicButton from './RoutesUI/BasicButton.vue';
 export default {
     components: {
         RatingComponent : RatingComponent,
+        BasicButton : BasicButton,
     },
     data() {
         return {
@@ -127,6 +129,9 @@ export default {
          this.userNameValidity = 'invalid'; } else {
             this.userNameValidity = 'valid'
          }
+    },
+    ConfirmInput() {
+        this.$router.push('/components/MainComponent')
     }
    }
 }
@@ -134,13 +139,35 @@ export default {
 
 <style lang="scss" scoped>
 
-.form-control {
-margin: 0.75rem 0;
+.main {
+    margin: 20px;
+    border: 10px solid grey;
+    border-top-right-radius: 400px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 400px;
+    color: green;
 
-&.invalid {
-    border-color: red;
+    
 }
+
+.form-control {
+margin-left: 1em;
+
+
 }
+.input {
+    background-color:#92a8d1;
+	padding:5px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
+	border-radius: 5px;
+    margin: 10px;
+}
+
 
 
 </style>
