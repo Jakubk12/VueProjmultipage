@@ -13,6 +13,8 @@
 <style lang="scss" scoped>
 
 .header-buttons-menu {  
+        float: center;
+        margin-right: 0;
         height: 5%;
         width: 100%;
         top: 25%;
@@ -24,7 +26,7 @@
 .basic {
     
   background: #6b5b95;
-  margin-left: 25px;
+  margin-left: 125px;
   text-align: center;
   padding: 1em;
   font-family: 'Source Sans Pro', sans-serif;
@@ -44,15 +46,14 @@
 }
 }
 
-@media all and (max-width:1000px) {
+@media all and (max-width:900px) {
   .header-buttons-menu {
-    display: block;
+        display: block;
         padding-left: 25px;
         padding-right: 35px;
     .basic {
         width: 30%;
-        margin-left: 5px;
-        margin-right: 5px;
+        
     } 
 }
   }

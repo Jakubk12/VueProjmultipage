@@ -52,15 +52,17 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-.slide {
+.slide-1 {
     display: flex;
     justify-content: center;
 } .slide-inner {
     margin: auto;
     position: relative;
-    width: 650px;
-    height: 250px;
+    width: 800px;
+    height: 300px;
     overflow: hidden; 
+    display: inline-block;
 
 }
+
 </style>

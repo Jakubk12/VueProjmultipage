@@ -6,7 +6,9 @@
     <infos-resource v-for="element in storedElements" 
     :key="element.id" 
     :title="element.title" 
-    :description="element.description"></infos-resource>
+    :description="element.description"
+    :link="element.link"
+    :img="element.img"></infos-resource>
   <!--  <h2>A capabilities by using preprocessors</h2>
     <p></p>
     <p> <a v-wave="{color: '#d64161', duration: 2}" class="c-btn">Read More</a></p>
@@ -83,14 +85,16 @@ data() {
       {
         id: 'preprocessor-sass',
         title: 'Sass Preprocessor',
-        description: 'Sass posibilities',
-        link: 'https://techaffinity.com/blog/what-is-sass-css-preprocessor/'
+        description: 'Sass possibilities',
+        link: 'https://techaffinity.com/blog/what-is-sass-css-preprocessor/',
+        img: '',
       },
       {
         id: 'tailwind-bootstrap',
-        title: 'Tailwind and bootstrap',
+        title: 'Tailwind and Bootstrap',
         description: 'Tailwind and bootstrap differences',
-        link: 'https://www.geeksforgeeks.org/tailwind-css-vs-bootstrap/'
+        link: 'https://www.geeksforgeeks.org/tailwind-css-vs-bootstrap/',
+        img: 'https://miro.medium.com/max/640/1*UkRHXlv-nM-jF0aP-rjG-g.jpeg',
       },
       {
         id: 'Javascript',

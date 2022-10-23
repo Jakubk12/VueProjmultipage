@@ -4,7 +4,9 @@
   <article class="c-posts__item">
     <h2>{{title}}</h2>
     <p>{{description}}</p>
-    <p> <a :href="link" v-wave="{color: '#d64161', duration: 2}" class="c-btn">{{link}}Read More</a></p>
+    <p v-wave="{color: '#d64161', duration: 2}" class="c-btn"> Read More<a :href="link">{{link}}</a></p>
+       <img :src="img" />
+
             <header>
                 </header>
                 </article>
@@ -13,7 +15,7 @@
 </template>
 <script>
 export default {
-    props: ['title', 'description', 'link']
+    props: ['title', 'description', 'link', 'img']
 }
 </script>
 
@@ -54,6 +56,11 @@ p {
   font-weight: normal;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+img {
+  width: 350px;
+  height: 350px;
 }
 
 .c-btn {
