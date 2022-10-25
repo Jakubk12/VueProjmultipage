@@ -1,5 +1,9 @@
 # projectmultipage
 
+## What is it?
+It is single-multipage Vueapp. There are nested components of Vue, with complete content about modern frontend technologies and more.
+
+
 # Used technologies/librariers:
 HTML 5, CSS 3,
 Sass v.1.54.9,
