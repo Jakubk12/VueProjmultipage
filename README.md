@@ -1,8 +1,15 @@
 # projectmultipage
 
+# Used technologies/librariers:
+HTML 5, CSS 3,
+Sass v.1.54.9,
+VueJs v.3.2.13 & VueRouter v.4.1.5 & VueAxios v.3.5.0
+
+
 ## Project setup
 ```
 npm install
+
 ```
 
 ### Compiles and hot-reloads for development
