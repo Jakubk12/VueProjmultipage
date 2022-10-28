@@ -1,13 +1,17 @@
 <template>
 <footer class="c-footer">
-  <p> Did you want contact to me?  <a href="http://interstellaripsum.com?ref=codepen?pen=wWWmNB" target="_blank">InterstellarIpsum.com</a></p>
+    <p> Did you want contact to me?</p>
+  <p> Email: <a href="jakubkeska11@gmail.com">jakubkeska11@gmail.com</a></p>
+    <p> <a href="https://www.linkedin.com/in/jakub-k%C4%99ska-a6643b24b/" >Linkedin</a></p>
+
 </footer>
 </template>
 
 <style lang="scss" scoped>
 .c-footer {
+  margin-top: 20%;
   margin-right: 0;
-  height: 100px;
+  height: 130px;
   padding-bottom: 75%;
   margin-bottom: 0;
   background: #EDD382;

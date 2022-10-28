@@ -4,7 +4,7 @@
   <article class="c-posts__item">
     <h2>{{title}}</h2>
     <p>{{description}}</p>
-    <p v-wave="{color: '#d64161', duration: 2}" class="c-btn"> Read More<a :href="link">{{link}}</a></p>
+    <p v-wave="{color: '#d64161', duration: 2}" class="c-btn"> <a :href="link"> Read More : {{link}}</a></p>
        <img :src="img" />
 
             <header>
@@ -75,6 +75,7 @@ img {
   padding: .3em 0;
   position: relative;
   transition: .2s all;
+
   
   &:before {
     content: '';

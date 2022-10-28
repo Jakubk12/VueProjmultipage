@@ -141,11 +141,12 @@ export default {
 
 .main {
     margin: 20px;
-    border: 10px solid grey;
-    border-top-right-radius: 400px;
+    border: 2px solid grey;
+    border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    border-bottom-right-radius: 400px;
+    border-bottom-right-radius: 40px;
     color: green;
+    width: 50%;
 
     
 }
