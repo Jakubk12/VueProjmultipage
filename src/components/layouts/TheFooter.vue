@@ -1,6 +1,6 @@
 <template>
 <footer class="c-footer">
-  <p>Ipsum provided by <a href="http://interstellaripsum.com?ref=codepen?pen=wWWmNB" target="_blank">InterstellarIpsum.com</a></p>
+  <p> Did you want contact to me?  <a href="http://interstellaripsum.com?ref=codepen?pen=wWWmNB" target="_blank">InterstellarIpsum.com</a></p>
 </footer>
 </template>
 
